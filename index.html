@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="utfr-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>Pokemon Trivia Game</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="header" class="card">
+            <section class="row justify-content-center">
+                <h1 class="col-6">Pokemon Trivia Game!</h1>
+            </section>
+
+            <section class="row justify-content-center">
+                <h2 id="timer" class="col-3 "></h2>
+            </section>
+            </div>
+
+            <section class="row justify-content-center card">
+                <article id="trivia" class="col-8 card-body">
+                    <ol>
+                        <li>What is the most effective Pokeball?
+                            <form id="q1">
+                                <input type="radio" name="q1" value="1" id="1"> Master Ball<br>
+                                <input type="radio" name="q1" value="0" id="2"> Shadow Ball<br>
+                                <input type="radio" name="q1" value="0" id="3"> Ultra Ball
+                            </form>
+                        </li>
+                        <li>What is Pikachu's number in the Pokedex?
+                            <form>
+                                <input type="radio" name="q2" value="0" id="4"> 1 <br>
+                                <input type="radio" name="q2" value="0" id="5"> 17<br>
+                                <input type="radio" name="q2" value="1" id="6"> 25
+                            </form>
+                        </li>
+                        <li>What Pokemon type was NOT introduced in the Johto region?
+                            <form>
+                                <input type="radio" name="q3" value="1" id="7"> dragon<br>
+                                <input type="radio" name="q3" value="0" id="8"> steel<br>
+                                <input type="radio" name="q3" value="0" id="9"> dark.
+                            </form>
+                        </li>
+                        <li>Which town does the gym leader Sabrina live in?
+                            <form>
+                                <input type="radio" name="q4" value="1" id="10"> Saffron City <br>
+                                <input type="radio" name="q4" value="0" id="11"> Lavender City <br>
+                                <input type="radio" name="q4" value="0" id="12"> Celedon City 
+                            </form>
+                        </li>
+                        <li>How many gym badges must a pokemon trainer earn before challenging the Elite Four?
+                            <form>
+                                <input type="radio" name="q5" value="0" id="13"> 7 <br>
+                                <input type="radio" name="q5" value="1" id="14"> 8 <br>
+                                <input type="radio" name="q5" value="0" id="15"> 9
+                            </form>
+                        </li>
+                        <li>What does HM stand for?
+                            <form>
+                                <input type="radio" name="q6" value="0" id="16">Hyper Machine <br>
+                                <input type="radio" name="q6" value="0" id="17">Happy Machine <br>
+                                <input type="radio" name="q6" value="1" id="18">Hidden Machine
+                            </form>
+                        </li>
+                        <li>What are Ghost types immune to? 
+                            <form>
+                                <input type="radio" name="q7" value="0" id="19">Normal Pokeballs <br>
+                                <input type="radio" name="q7" value="1" id="20">Normal Type Attacks <br>
+                                <input type="radio" name="q7" value="0" id="21">Healing potions
+                            </form>
+                        </li>
+                        <li>What pokemon can only be found in the Safari zone in Pokemon Red/Blue?
+                            <form>
+                                <input type="radio" name="q8" value="1" id="22">Tangela <br>
+                                <input type="radio" name="q8" value="0" id="23">Exeggcute <br>
+                                <input type="radio" name="q8" value="0" id="24"> Oddish
+                            </form>
+                        </li>
+                        <li>Which pokemon is a NOT a Flying type?
+                            <form>
+                                <input type="radio" name="q9" value="0" id="25">Charizard <br>
+                                <input type="radio" name="q9" value="0" id="26">Gyarados <br>
+                                <input type="radio" name="q9" value="1" id="27">Psyduck 
+                            </form>
+                        </li>
+                        <li>What city do you receive the Earth Badge?
+                            <form>
+                                <input type="radio" name="q10" value="0" id="28">Vermillion City <br>
+                                <input type="radio" name="q10" value="1" id="29">Viridian City <br>
+                                <input type="radio" name="q10" value="0" id="30">Cinnabar Island
+                            </form>
+                        </li> 
+                    </ol>  
+                </article>
+            </section>
+            <section class="row justify-content-center">
+                <article id="results" class="col-8">
+                </article>
+            </section>
+
+            <section class="row justify-content-center">
+                <button id="start" class="col-3">Start</button>
+                <button id="submit" class="col-3">Submit</button>
+                <button id="reset" class="col-3">Reset</button>
+            </section>
+
+        </div>
+    </body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="assets/javascript/app.js" ></script>
+</html>
